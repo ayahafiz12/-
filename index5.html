@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النجوم</title>
+    <!-- تضمين خط أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعدادات الخلفية والعناصر */
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://cdn.pixabay.com/photo/2016/02/13/12/26/star-1193598_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* تصميم القسم */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffc107;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: #f8f9fa;
+            margin: 20px 0 10px;
+        }
+
+        p, ul {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #f8f9fa;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "★ ";
+            color: #ffd700;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* زر الصفحة الرئيسية */
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-home:hover {
+            background-color: #ffe066;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7);
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- المحتوى -->
+    <section>
+        <h1>النجوم</h1>
+        <p>النجوم هي أجسام غازية مضيئة ضخمة تُشع الضوء والحرارة بفعل التفاعلات النووية في قلبها. تختلف النجوم من حيث الحجم، اللون، ودرجة الحرارة. لون النجم يعكس درجة حرارته؛ النجوم الحمراء هي الأقل حرارة، بينما الزرقاء هي الأكثر حرارة.</p>
+        <img src=https://www.edarabia.com/ar/wp-content/uploads/2018/10/6-important-information-about-stars.jpg alt="صورة للنجوم">
+
+        <!-- أنواع النجوم -->
+        <h3>أنواع النجوم</h3>
+        <ul>
+            <li><strong>النجوم القزمة:</strong> مثل الشمس، وهي نجوم صغيرة الحجم تعيش لفترة طويلة.</li>
+            <li><strong>النجوم العملاقة:</strong> أكبر حجمًا وأكثر إشراقًا من النجوم القزمة.</li>
+            <li><strong>النجوم العملاقة الفائقة:</strong> هي أضخم النجوم في الكون وتستهلك طاقتها بسرعة.</li>
+        </ul>
+
+        <!-- معلومات إضافية -->
+        <h3>حقائق عن النجوم</h3>
+        <p><strong>الشمس:</strong> تُعتبر الشمس أقرب نجم إلى الأرض، وهي مصدر الحياة والطاقة على كوكبنا.</p>
+        <p><strong>تكوين النجوم:</strong> تتشكل النجوم داخل السدم، وهي غيوم غازية ضخمة في الفضاء. تبدأ حياتها عندما تنهار كتلة من الغاز والغبار تحت تأثير الجاذبية.</p>
+        <p><strong>مصير النجوم:</strong> يعتمد مصير النجم على كتلته؛ النجوم الصغيرة تنتهي كأقزام بيضاء، بينما النجوم الكبيرة تنفجر كمستعر أعظم (Supernova) وتتحول إلى ثقوب سوداء أو نجوم نيوترونية.</p>
+
+        <!-- زر العودة إلى الصفحة الرئيسية -->
+        <a href="index.html" class="btn-home">العودة إلى الصفحة الرئيسية</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النيازك</title>
+    <!-- تضمين خط أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعدادات الخلفية والعناصر */
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://cdn.pixabay.com/photo/2017/02/14/03/03/space-2065710_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* تصميم القسم */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ffa07a;
+            text-shadow: 0 0 10px #ffa07a, 0 0 20px #ff6347;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: #f8f9fa;
+            margin: 20px 0 10px;
+        }
+
+        p, ul {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #f8f9fa;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "☄ ";
+            color: #ffa07a;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* زر الصفحة الرئيسية */
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffa07a;
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 160, 122, 0.5);
+        }
+
+        .btn-home:hover {
+            background-color: #ffb394;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 160, 122, 0.7);
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- المحتوى -->
+    <section>
+        <h1>النيازك</h1>
+        <p>النيازك هي أجسام صلبة تدخل الغلاف الجوي للأرض، وتنتج عن ذلك احتكاك شديد يؤدي إلى احتراقها جزئيًا. تعتبر النيازك من الأجسام الفضائية القليلة التي تصل إلى سطح الأرض.</p>
+        <img src=https://cdn.alweb.com/thumbs/alkaoun/article/fit710x532/%D9%85%D8%A7-%D9%87%D9%88-%D8%A3%D9%88%D9%84-%D9%86%D9%8A%D8%B2%D9%83-%D8%B3%D9%82%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D8%B1%D8%B6.jpg alt="صورة لنيازك">
+
+        <!-- أنواع النيازك -->
+        <h3>أنواع النيازك</h3>
+        <ul>
+            <li><strong>النيازك الحديدية:</strong> تتكون بشكل رئيسي من الحديد والنيكل، وهي ثقيلة جدًا ومتماسكة.</li>
+            <li><strong>النيازك الحجرية:</strong> تحتوي على معادن صخرية وتشكل النسبة الأكبر من النيازك.</li>
+            <li><strong>النيازك الحديدية الحجرية:</strong> مزيج من المعادن الحديدية والصخرية.</li>
+        </ul>
+
+        <!-- معلومات إضافية -->
+        <h3>حقائق عن النيازك</h3>
+        <p><strong>تاريخ النيازك:</strong> سجلت العديد من الحضارات القديمة وقوع النيازك على الأرض، وكان يُعتقد أنها رسائل من الآلهة.</p>
+        <p><strong>أكبر نيزك معروف:</strong> يُعد نيزك "هوبا" في ناميبيا أكبر نيزك عُثر عليه على الأرض، ويزن حوالي 60 طنًا.</p>
+        <p><strong>أهمية النيازك:</strong> تساهم النيازك في دراسة تكوين النظام الشمسي والكواكب، حيث تحمل مواد قديمة تعود إلى بداية الكون.</p>
+
+        <!-- زر العودة إلى الصفحة الرئيسية -->
+        <a href="index.html" class="btn-home">العودة إلى الصفحة الرئيسية</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأقمار</title>
+    <!-- خط جديد وأنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعدادات الخلفية والتنسيق العام */
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://cdn.pixabay.com/photo/2021/03/25/11/07/moon-6120945_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* إعداد القسم الرئيسي */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 700px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        h2 {
+            font-size: 48px;
+            color: #ffe54c;
+            text-shadow: 0 0 10px #ffe54c, 0 0 20px #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #f8f9fa;
+            margin: 10px 0;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* زر الصفحة الرئيسية */
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
+        }
+
+        .btn-home:hover {
+            background-color: #ffd633;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 204, 0, 0.7);
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- المحتوى -->
+    <section>
+        <h2>الأقمار</h2>
+        <p>الأقمار هي أجسام معتمة تدور حول الكواكب بفعل الجاذبية. على الرغم من أنها لا تنتج الضوء، إلا أنها تعكس ضوء الشمس الذي يسقط عليها، مما يجعلها تبدو مضيئة في السماء ليلاً.</p>
+        <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg alt="صورة للقمر">
+
+        <!-- معلومات إضافية -->
+        <p><strong>القمر الطبيعي الوحيد للأرض:</strong> يُعتبر القمر هو التابع الطبيعي الوحيد لكوكب الأرض، حيث يبلغ قطره حوالي 3,474 كم، وهو يُعد خامس أكبر قمر طبيعي في النظام الشمسي.</p>
+        <p><strong>دورة القمر:</strong> يستغرق القمر حوالي 27.3 يومًا لإكمال دورة كاملة حول الأرض، بينما يستغرق حوالي 29.5 يومًا ليكمل دورة أطواره التي تشمل البدر والهلال والمحاق.</p>
+        <p><strong>تأثير القمر على الأرض:</strong> يتحكم القمر في ظاهرة المد والجزر التي تحدث بسبب جاذبيته للأرض. كما يُعتبر مصدر إلهام للعديد من الثقافات والأساطير حول العالم.</p>
+        <p><strong>السطح القمري:</strong> يتميز سطح القمر بفوهات ناتجة عن اصطدامات النيازك، ويحتوي على مناطق مضيئة تُعرف بـ "المرتفعات القمرية"، ومناطق مظلمة تُسمى "بحار القمر".</p>
+
+        <!-- زر العودة إلى الصفحة الرئيسية -->
+        <a href="index.html" class="btn-home">العودة إلى الصفحة الرئيسية</a>
+    </section>
+</body>
+</html>

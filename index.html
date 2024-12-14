@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>الظواهر الكونية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* تنسيق القوائم بدون شريط الانزلاق */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ff99;
+            transform: scale(1.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+            transition: transform 1s ease-out;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        /* شريط النص المتحرك */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .marquee {
+            display: flex;
+            animation: marquee 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .marquee-item {
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ff99;
+            text-shadow: 0 0 10px #00ff99;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* تأثيرات ضوئية للصور */
+        .gallery-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-image {
+            max-width: 100%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 255, 153, 1);
+        }
+
+        /* تأثيرات التمرير */
+        .light-effect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(0, 255, 153, 0.2);
+            animation: lightEffect 4s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes lightEffect {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.5); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        /* تأثير ضوء للأزرار */
+        button {
+            background-color: #00ff99;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00cc77;
+            box-shadow: 0 0 10px #00ff99;
+        }
+
+        /* النيزك المتحرك */
+        .meteor {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #ff9900;
+            border-radius: 50%;
+            animation: meteor-shower 3s linear infinite;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.8);
+        }
+
+        @keyframes meteor-shower {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                transform: translateX(-50%) translateY(100vh) rotate(45deg);
+            }
+        }
+
+        /* الصاروخ المتحرك */
+        .rocket {
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            width: 50px;
+            height: 100px;
+            background-color: #ff5733;
+            border-radius: 10px 10px 0 0;
+            animation: rocket-fly 5s linear infinite;
+        }
+
+        .rocket::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: #ff5733;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes rocket-fly {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                transform: translateX(-50%) translateY(-100vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>الظواهر الكونية</h1>
+        <nav>
+            <ul>
+                <li><a href="index8.html">برمجة وتصميم</a></li>
+                <li><a href="index6.html">الكواكب</a></li>
+                <li><a href="index1.html">الأقمار</a></li>
+                <li><a href="index5.html">النجوم</a></li>
+                <li><a href="index3.html">السدم</a></li>
+                <li><a href="index4.html">النيازك</a></li>
+                <li><a href="index7.html">الشهب</a></li>
+                <li><a href="index2.html">المجرة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee">
+            <div class="marquee-item">الشهب: جزيئات صغيرة تحترق عند دخولها الغلاف الجوي، وتظهر خطوط مضيئة في السماء.</div>
+            <div class="marquee-item">النيازك: كتل صخرية تدخل الغلاف الجوي وتظهر كمذنبات، ويمكن أن تصطدم بالأرض.</div>
+            <div class="marquee-item">السدم: سحب ضخمة من الغاز والغبار في الفضاء، تعتبر أماكن ولادة النجوم.</div>
+            <div class="marquee-item">النجوم: هي مصادر الضوء والطاقة في الكون، وتتشكل من غازات مثل الهيدروجين والهيليوم.</div>
+            <div class="marquee-item">المجرة: مجموعة ضخمة من النجوم والغاز والغبار تدور حول مركز مشترك.</div>
+            <div class="marquee-item">الكواكب: أجسام تدور حول النجوم، ومنها كوكب الأرض الذي يحتوي على الحياة.</div>
+            <div class="marquee-item">الأقمار: أجسام صغيرة تدور حول الكواكب، مثل قمر الأرض.</div>
+        </div>
+    </div>
+
+
+    <section class="sections-container">
+        <div class="section" id="f6">
+            <a href="index7.html" class="planet-link">
+                <h2>الشهب</h2>
+            </a>
+            <p>الشهب هي جزيئات صغيرة تحترق عند دخولها الغلاف الجوي.</p>
+        </div>
+
+        <div class="section" id="f5">
+            <a href="index4.html" class="planet-link">
+                <h2>النيازك</h2>
+            </a>            <p>النيازك هي كتل من الصخور تدخل الغلاف الجوي وتظهر كمذنب.</p>
+        </div>
+
+        <div class="section" id="f4">
+            <a href="index3.html" class="planet-link">
+                <h2>السدم</h2>
+            </a>            <p>السدم هي سحب ضخمة من الغاز والغبار في الفضاء.</p>
+        </div>
+
+        <div class="section" id="f3">
+            <a href="index5.html" class="planet-link">
+                <h2>النجوم</h2>
+            </a>            <p>النجوم هي مصدر الضوء والطاقة في الكون.</p>
+        </div>
+
+        <div class="section" id="f7">
+            <a href="index2.html" class="planet-link">
+                <h2>المجرة</h2>
+            </a>            <p>المجرات هي مجموعات ضخمة من النجوم والمادة المظلمة.</p>
+        </div>
+
+        <div class="section" id="f1">
+            <a href="index6.html" class="planet-link">
+                <h2>الكواكب</h2>
+            </a>
+            <p>الكواكب هي أجسام تدور حول نجوم، مثل كوكب الأرض.</p>
+        </div>
+        
+        </div>
+
+        <div class="section" id="f2">
+            <a href="index1.html" class="planet-link">
+                <h2>الأقمار</h2>
+            </a>            <p>الأقمار هي أجسام صغيرة تدور حول الكواكب.</p>
+        </div>
+    </section>
+
+    <section class="image-gallery">
+        <div class="gallery-container">
+            <div class="light-effect"></div>
+            <img class="gallery-image" src="https://meissa.space/wp-content/uploads/SAVE_20231118_122601.jpg" alt="صورة 5">
+            <img class="gallery-image" src="https://media.gemini.media/img/large/2017/8/13/2017_8_13_2_36_9_785.jpg" alt="صورة 1">
+            <img class="gallery-image" src="https://cdn.alweb.com/thumbs/alkaoun/article/fit710x532/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%B2%D9%83-%D8%A3%D9%87%D9%85-%D8%A7%D9%84%D8%AD%D9%82%D8%A7%D8%A6%D9%82-%D9%88%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.jpg" alt="صورة 2">
+            <img class="gallery-image" src="https://annabaa.org/aarticles/fileM/73/1717903821666521cd93f2a.jpg" alt="صورة 3">
+            <img class="gallery-image" src="https://astrobia.com/wp-content/uploads/2020/08/Orbit.jpg" alt="صورة 4">
+        </div>
+    </section>
+
+    <section class="feedback-form">
+        <h2>شاركنا برأيك</h2>
+        <form action="#" method="POST">
+            <textarea placeholder="اكتب رأيك هنا..." rows="4" required></textarea>
+            <button type="submit">أرسل</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>تم تصميم هذا الموقع تحت إشراف د/ حمدى سليمان - د/ محمد كيوان </p>
+    </footer>
+
+</body>
+</html>

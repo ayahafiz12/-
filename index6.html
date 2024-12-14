@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكواكب</title>
+    <!-- تضمين خط أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعدادات الخلفية والعناصر */
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://cdn.pixabay.com/photo/2016/02/13/12/26/star-1193598_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* تصميم القسم */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffc107;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: #f8f9fa;
+            margin: 20px 0 10px;
+        }
+
+        p, ul {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #f8f9fa;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "★ ";
+            color: #ffd700;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* زر الصفحة الرئيسية */
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-home:hover {
+            background-color: #ffe066;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7);
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- المحتوى -->
+    <section>
+        <h1>الكواكب</h1>
+        <p>الكواكب هي أجسام كبيرة تدور حول النجوم، مثل الأرض التي تدور حول الشمس. الكواكب لا تشع الضوء مثل النجوم، بل تعكس ضوء النجوم التي تدور حولها. الكواكب تختلف في الحجم، التكوين، والمسافة من النجم.</p>
+        <img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5iJ8PSi75IBuUfPg57ffbURWl6MISy5-YQqgb9EzE1_h6IorTFO4UFSDpUHdqgomGO2pGv4zuFha802pR_pfwcPa2beI0eDaSH6T8Lezkc8jGJhPRd2TaR4_CWXWhWxo4HSO-oHzq4GhZmvRdMXLE0FHnn6GpcodZxFOzmYnds48YNKs_r_si-cBmxiU/s1792/DALL%C2%B7E%202024-10-24%2015.11.03%20-%20A%20detailed%20and%20vibrant%20image%20of%20the%20solar%20system,%20showing%20the%20Sun%20at%20the%20center%20with%20bright%20solar%20flares,%20and%20all%20eight%20planets%20orbiting%20around%20it.%20Th.webp alt="صورة للكواكب">
+
+        <!-- أنواع الكواكب -->
+        <h3>أنواع الكواكب</h3>
+        <ul>
+            <li><strong>الكواكب الداخلية:</strong> مثل الأرض والمريخ، وهي كواكب صخرية قريبة من الشمس.</li>
+            <li><strong>الكواكب الغازية:</strong> مثل المشتري وزحل، وهي كواكب ضخمة مكونة أساسًا من الغازات.</li>
+            <li><strong>الكواكب القزمة:</strong> مثل بلوتو، وهي كواكب صغيرة تدور في أطراف النظام الشمسي.</li>
+        </ul>
+
+        <!-- معلومات إضافية -->
+        <h3>حقائق عن الكواكب</h3>
+        <p><strong>الأرض:</strong> كوكبنا هو الوحيد المعروف بوجود الحياة عليه بفضل وجود الماء والجو المناسب.</p>
+        <p><strong>المشتري:</strong> يعد المشتري أكبر كوكب في المجموعة الشمسية وهو كوكب غازي.</p>
+        <p><strong>الزئبق:</strong> أقرب كوكب إلى الشمس ويتميز بدرجات حرارة شديدة الارتفاع والانخفاض.</p>
+
+        <!-- زر العودة إلى الصفحة الرئيسية -->
+        <a href="index.html" class="btn-home">العودة إلى الصفحة الرئيسية</a>
+    </section>
+</body>
+</html>
